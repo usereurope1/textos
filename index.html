@@ -1,0 +1,795 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textos para Corretores de Imóveis</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .anuncios-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .card-imagem {
+            width: 100%;
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .card-imagem img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .card:hover .card-imagem img {
+            transform: scale(1.1);
+        }
+
+        .card-conteudo {
+            padding: 25px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-titulo {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 600;
+            border-bottom: 2px solid #764ba2;
+            padding-bottom: 10px;
+        }
+
+        .card-descricao {
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            white-space: pre-wrap;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #764ba2;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .card-descricao::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .card-descricao::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .card-descricao::-webkit-scrollbar-thumb {
+            background: #764ba2;
+            border-radius: 10px;
+        }
+
+        .card-descricao::-webkit-scrollbar-thumb:hover {
+            background: #667eea;
+        }
+
+        .card-botao {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            cursor: pointer;
+            align-self: flex-start;
+            margin-top: auto;
+        }
+
+        .card-botao:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            
+            .anuncios-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .card-descricao {
+                max-height: 300px;
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏠 Textos para Corretores de Imóveis</h1>
+        </header>
+
+        <div class="anuncios-grid">
+            <!-- Anúncio 1 - Foto a1.jpg -->
+            <div class="card">
+                <div class="card-imagem">
+                    <img src="a1.jpg" alt="Casa Morumbi 430 mil">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="card-titulo">Casa 2 Dormitórios Jd Morumbi</h3>
+                    <div class="card-descricao">
+Casa 2 Dormitórios Jd Morumbi 
+
+2 Dormitórios (sendo 1 suíte)
++ 1 Banheiro Social
+Sala de Estar
+Sala de Jantar
+Cozinha
+Àrea de serviço 
+Garagem Coberta
+Cerca Elétrica 
+Portão Eletrônico 
+Quintal com 200m² de espaço livre
+Frente da Casa é Sol da Manhã
+Estuda carro como parte do pagamento
+
+Terreno 315 m²
+Construído 115 m²
+Ano Construção 2022
+
+investimento R$ 430.000
+
+Locais Próximos: Edifícios Wish e Castro Alves, Centro, Escolas COC e Sapiens, Senac, Clube Araraquarense, Sesc
+
+IPTU R$ 528/ano
+
+____________________________________________________________
+Melhor custo/beneficio Jd. Morumbi 
+
+aqui você tem 200m² de espaço livre para construir o que desejar !
+construa seu espaço gourmet ou + dormitórios
+
+Além disso este imóvel pode ser escritório comercial ou empresa
+ano construção [2022]
+Terreno 315m² | Construido 115m² 
+2 Dormitórios [1 suite]
+
+_____________________________________________________________
+
+vai perder essa ?
+Segurança. Tranquilidade e Conforto 
+Jd Morumbi | 2 Dormitórios (1 Suíte) 
+
+entrada 86 mil e inicia um financiamento
+investimento "430 mil reais por enquanto"
+aceita carro 
+
+________________________________________________________
+Bairro nobre, Casa Moderna ! Jd Morumbi
+
+2 Dormitórios | 1 Suite
+Ao lado do Ed. Castro Alves
+Sol da manhã 
+Terreno 315m² | Construido 115m²
+Construido em 2022 (semi-novo)
+
+430 mil a vista 
+financia com carro de entrada (86 mil)
+
+_______________________________________________________________
+Comparativo prédio x casa no Morumbi 
+> prédio 140m² construído + taxa condomínio R$ 500/Mês + IPTU
+Valor R$ 900.000 
+
+> Casa Morumbi (próximo do prédio)
+terreno 315m² | 115m² construído
+taxa unica IPTU R$ 528/ano
+Valor R$ 430.000
+ 
+Qual vale mais a pena para você ?
+nessa casa o custo/benefício é imbatível
+
+___________________________________________________________
+oportunidade mesmo ? ai é você que diz !
+
+Casa moderna Jd Morumbi 
+
+2 Dormitórios (1 Suíte)
+terreno 315m² | construido 115m²
+
+apenas 86 mil entrada e você financia !
+
+430 mil a vista
+
+Próximo de escolas particulares, edifício Castro Alves. 
+Próximo Clube Araraquarense 
+
+200m² de espaço livre para construir mais dormitórios ou espaço de lazer
+
+Aceita carro de entrada, ta esperando outro comprar ?
+
+______________________________________________________
+
+Status. Prestígio. Sofisticação | Jd. Morumbi
+
+morar bem faz diferença sim, um bairro sofisticado !
+tradicional e próximo das principais escolas particulares e clubes de lazer !
+
+vai perder essa oportunidade ?
+ainda da tempo de você assinar em baixo !!
+
+____________________________________________________________
+Uma tela em branco de 200m² no seu quintal.
+
+Casa moderna (2022) no Jd. Morumbi. 2 dorms (1 suíte) com o espaço que você sempre quis para crescer.
+
+Próximo ao COC e Sapiens
+
+R$ 430.000 (Estuda-se carro)
+
+Oportunidade rara de terreno e localização.
+
+____________________________________________________________
+
+Perto de tudo, com o sol da manhã na porta.
+
+More ao lado do Castro Alves e Senac. Casa seminova, segura e pronta para morar. 2 dormitórios e um quintal generoso.
+
+Aceitamos seu veículo como parte do investimento de R$ 430 mil.
+
+____________________________________________________________
+Espaço, sol e praticidade.
+
+Jd. Morumbi: 115m² de área construída em um terreno de 315m². 
+Moderna, segura e em localização estratégica.
+
+Investimento: R$ 430.000 (Facilitamos com seu carro).
+
+O próximo passo da sua família começa aqui.
+
+____________________________________________________________
+Onde o mercado vê um terreno, você vê liberdade.
+
+200m² de quintal livre no Jd. Morumbi para você construir o que imaginar. Casa moderna (2022) em localização estratégica, perto do COC e Senac.
+
+R$ 430.000 | Aceitamos carro.
+
+Invista onde Araraquara cresce com qualidade.
+
+____________________________________________________________
+A rotina que você sempre quis, a poucos passos.
+
+Esqueça o trânsito. More perto do Clube Araraquarense e das melhores escolas. 
+Casa com suíte, sol da manhã e segurança total.
+
+Valor: R$ 430 mil (Estudamos seu carro como parte).
+
+Simples, moderno e pronto para você.
+
+____________________________________________________________
+Casa nova, sol da manhã e quintal gigante.
+
+Jd. Morumbi: 315m² de terreno para quem não abre mão de espaço. Localização premium ao lado do Edifício Castro Alves.
+
+Investimento: R$ 430 mil.
+
+Sua chance de mudar de patamar em Araraquara.
+
+-------------------------------------------------------------------------------------------
+O endereço diz muito sobre onde você chegou.
+
+Morar no Jd. Morumbi é mais do que conveniência; é um marco. 
+Esta casa seminova (2022) oferece o equilíbrio entre o design moderno e o potencial de crescimento que você merece.
+
+2 Dorms (1 Suíte) + 200m² de quintal livre para o seu projeto de lazer.
+
+Localização: A passos do Clube Araraquarense e das melhores escolas.
+
+R$ 430.000 (Aceita veículo na entrada).
+
+-------------------------------------------------------------------------------------------
+No Jd. Morumbi, o luxo hoje é ter espaço.
+
+Enquanto os terrenos diminuem, aqui você garante 315m² totais. 
+Uma casa pronta para morar ou instalar sua empresa, com uma área livre que é raridade no bairro.
+
+Ideal para moradia premium ou escritório comercial.
+
+Estrutura: 115m² construídos com acabamento atual.
+
+Oportunidade: R$ 430.000.
+
+A pergunta não é se você quer, é se chegará antes do próximo interessado.
+
+-------------------------------------------------------------------------------------------------
+
+O próximo capítulo da sua família não pode esperar.
+
+Você pode continuar procurando ou pode decidir pelo Jd. Morumbi hoje. Uma casa moderna, segura e com o custo-benefício mais agressivo da região.
+
+O fato: R$ 430 mil por 315m² de terreno em localização nobre.
+
+Entrada de 86 mil (aceita carro) + financiamento.
+
+--------------------------------------------------------------------------------------------
+Sua empresa ou sua família no melhor endereço do Jd. Morumbi.
+
+Uma estrutura moderna (2022) que se adapta ao seu momento. 
+Seja para morar com sofisticação ou para posicionar seu escritório em um bairro estratégico, este imóvel é a escolha certa.
+
+O Trunfo: 315m² de terreno com visibilidade e prestígio.
+
+A Estrutura: 2 Dorms (1 Suíte) + 200m² de área livre para expansão ou estacionamento.
+
+Investimento: R$ 430.000 (Aceita carro como parte do pagamento).
+
+-----------------------------------------------------------------------------------------
+Dinheiro no banco ou patrimônio no Jd. Morumbi?
+
+Em tempos de incerteza, o metro quadrado mais valorizado de Araraquara é o seu porto seguro. 
+Uma casa seminova, com terreno gigante, por um preço abaixo do mercado de prédios da região.
+
+O Fato: R$ 430 mil. Valor que não compra nem um apartamento compacto nos lançamentos vizinhos.
+
+Diferencial: Zero taxa de condomínio e total liberdade de construção.
+Facilidade: Entrada facilitada com seu veículo.
+
+A oportunidade é clara. A decisão é sua.
+
+----------------------------------------------------------------------------------------------
+Onde o silêncio e a conveniência se encontram.
+
+Existe um prazer em morar perto de tudo, mas sentir a tranquilidade de um bairro nobre. 
+Esta casa no Jd. Morumbi oferece o sol da manhã na varanda e a segurança de uma construção de 2022.
+
+Perto de você: Melhores escolas, clubes e o dinamismo do Centro.
+
+Espaço: 115m² de área construída em um lote de 315m².
+
+Condição: R$ 430.000 (Estudamos sua proposta com carro).
+                    </div>
+                    <a href="#" class="card-botao">Copiar Textos</a>
+                </div>
+            </div>
+
+            <!-- Anúncio 2 - Foto a2.jpg -->
+            <div class="card">
+                <div class="card-imagem">
+                    <img src="a2.jpg" alt="Apartamento 3 Dormitórios XV Novembro">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="card-titulo">Apartamento 3 Dormitórios XV Novembro Centro</h3>
+                    <div class="card-descricao">
+Apartamento 3 Dormitórios com 180 m² | Centro [Próximo da Uniara| Aceita Casa/Carro]
+
+Edifício XV(15) de Novembro 
+3 Dormitórios (sendo 1 suíte c/ hidromassagem)
+Sala de estar
+Sala de Jantar
+Cozinha
+Copa
+Área de serviço 
+Dispensa
+3 Banheiros Sociais
+2 Varandas/Sacada
+2 Vagas garagem coberta
+1 Andar (com elevador)
+Portaria Eletrônica
+Gás individual 
+Condomínio R$ 1.000 (incluso Água)
+
+Aceita Casa/Carro como Parte
+
+investimento R$ 550.000
+
+Proximidades: Universidades Uniara, Praça da Independência 
+
+__________________________________________________________
+
+Ao lado de polos universitários conceituados !
+
+já ouvir falar de residência suspensa ?
+180 m² de mansão suspensa !
+é quando um apartamento é tão amplo que se transforma naturalmente em ambiente residencial !
+
+são 3 dormitórios (1 suite com hidro)
+Sala de estar com varanda ampla
+edifico xv de novembro araraquara sp
+
+valor R$550.000
+
+___________________________________________________________
+
+180 m² de liberdade no coração de Araraquara.
+
+Esqueça os apartamentos apertados. 
+No Edifício XV de Novembro, você tem o espaço de uma casa com a segurança do centro. 
+3 dormitórios, suíte com hidro e sacadas para ver a cidade.
+
+Investimento: R$ 550.000.
+
+Facilitamos o negócio: Aceitamos sua casa ou carro.
+
+__________________________________________________________
+Sua vida acontece a pé.
+
+Morar próximo à Uniara e à Praça da Independência é ganhar tempo. 
+Um apartamento clássico, gigante e pronto para a sua família. 
+180 m², 2 vagas e o conforto de ter tudo ao lado.
+
+Valor: R$ 550 mil.
+
+Estudamos permuta por casa ou veículo.
+
+__________________________________________________________
+Espaço raro. Localização central. Negócio facilitado.
+
+3 dormitórios (1 suíte) com 180 m² de área útil no Centro. 
+Um imóvel para quem valoriza m² real e proximidade com as universidades.
+
+R$ 550.000 (Aceita Casa ou Carro).
+
+Oportunidade de upgrade imediato.
+
+__________________________________________________________
+Mude para o Centro sem complicações.
+
+Precisa de mais espaço? 
+Trocamos seu carro ou casa por este gigante de 180 m² próximo à Uniara. 
+3 dormitórios, suíte com hidro e 2 vagas.
+
+Investimento: R$ 550 mil.
+
+Facilitamos a sua transição.
+
+__________________________________________________________
+Conveniência total ao lado da Uniara.
+
+Para famílias ou investidores que buscam o ponto mais estratégico de Araraquara. 
+180 m², 3 banheiros e localização imbatível.
+
+Valor: R$ 550.000 (Estudamos permuta).
+
+Onde a cidade pulsa, sua nova casa espera.
+                    </div>
+                    <a href="#" class="card-botao">Copiar Textos</a>
+                </div>
+            </div>
+
+            <!-- Anúncio 3 - Foto a3.jpg -->
+            <div class="card">
+                <div class="card-imagem">
+                    <img src="a3.jpg" alt="Casa Jd Dom Pedro">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="card-titulo">Casa Jd Dom Pedro</h3>
+                    <div class="card-descricao">
+Casa 3 Dormitórios Jd Dom Pedro [próximo do Vila Harmonia, Botânico]
+
+3 Dormitórios
+Sala de estar
+Banheiro 
+Cozinha
+Corredor lateral externo
+Portão eletrônico
+Quintal Amplo (60 m² Espaço Livre)
+A Frente da Casa é Sol da Manhã
+Casa com forro de PVC 
+Laje na Cozinha
+
+Terreno 200 m²
+Construido 98 m²
+
+Aceita financiamento
+
+investimento R$ 200.000
+
+Locais Próximos: Vila Harmonia, Av Henrique Lupo, Botânico, Cambuy, Centralizado, Tiago Lanches
+
+IPTU R$ 327/ano
+
+____________________________________________________________
+
+casa 3 dormitórios entre vila harmonia e botânico Araraquara
+
+Jd dom pedro ! 
+
+terreno 200m² | construido 98 m²
+
+R$ 40 mil entrada e você financia com parcela menor que aluguel 
+
+valor a vista R$ 200.000
+
+depois que vender nem adianta se arrepender !
+corre !
+
+_______________________________________________________
+Localização. Conveniência. Facilidade | Jd Dom Pedro 
+
+imagine-se vivendo próximo do Vila Harmonia e Botânico ?
+aqui você esta entre 2 referências em bem viver !
+
+3 dormitórios por 200 mil ?
+sim, acredite esta disponível "por enquanto"
+
+_______________________________________________________________
+Morar perto da Vila Harmonia por R$ 200 mil? Sim.
+
+A localização que você deseja com o preço que você pode pagar. 
+3 dormitórios no Jd. Dom Pedro, colado no Botânico e na Av. Henrique Lupo.
+
+Financiamento disponível.
+
+Quintal de 60m² para o seu lazer.
+
+Oportunidade é o que acontece quando o preço encontra a localização certa.
+
+____________________________________________________________
+Saia do aluguel e fique perto de tudo.
+
+3 dormitórios, quintal amplo e o sol da manhã te esperando. 
+No Jd. Dom Pedro, você está a minutos do Botânico e do Cambuy.
+
+Investimento: R$ 200.000 (Aceita financiamento).
+
+Uma escolha inteligente para quem busca praticidade em Araraquara.
+
+____________________________________________________________
+Localização premium. Preço de oportunidade.
+
+Jd. Dom Pedro: 3 dormitórios ao lado da Vila Harmonia. 
+Quintal livre, sol da manhã e pronto para financiar.
+
+R$ 200.000. Imóveis nessa região e nessa faixa de preço não duram.
+
+____________________________________________________________
+A localização que você quer, pelo preço que você precisa.
+
+3 dormitórios no Jd. Dom Pedro. 
+O privilégio de morar ao lado da Vila Harmonia e do Botânico pagando apenas R$ 200 mil.
+
+Use seu financiamento e mude sua realidade.
+
+____________________________________________________________
+3 Dormitórios e um quintal de verdade por R$ 200 mil.
+
+Chega de aperto. No Jd. Dom Pedro você tem 60m² de área livre e o sol da manhã na sua fachada. 
+Perto do Cambuy e da Henrique Lupo.
+
+Oportunidade real para quem busca espaço e conveniência.
+
+____________________________________________________________
+Para quem sabe que localização é tudo.
+
+Jd. Dom Pedro: Onde a praticidade encontra o custo-benefício. 
+3 dormitórios, pronto para financiar, a minutos do centro e do Botânico.
+
+Investimento: R$ 200.000.
+
+Simples. Direto. Seu.
+                    </div>
+                    <a href="#" class="card-botao">Copiar Textos</a>
+                </div>
+            </div>
+
+            <!-- Anúncio 4 - Foto a4.jpg -->
+            <div class="card">
+                <div class="card-imagem">
+                    <img src="a4.jpeg" alt="Ap 2 Dorms Campus ville 1">
+                </div>
+                <div class="card-conteudo">
+                    <h3 class="card-titulo">Ap 2 Dorms Campus ville 1</h3>
+                    <div class="card-descricao">
+Apartamento 2 dormitórios Vitta Campus Ville 1 - Proximo da Unesp.
+
+50m² | 2 dormitórios 
+1º andar
+1 banheiro 
+cozinha 
+sala estar
+lavanderia
+1 vaga garagem
+
+Aceita financiamento 100%
+Condominio R$ 240
+
+Investimento R$ 160.000
+
+Condominio com + de 10 itens de lazer
+"todos ambientes internos são climatizados"
+você tem 3 espaços gourmet com forno de pizza, espaço kids, brinquedoteca, salão de festas, piscina adulto e infantil, academia climatizada, fitness externo, mini-mercado, quadra esportes, wi-fi nas areas comuns,horta, portaria 24 horas
+
+Iptu R$ 230/ano
+_______________________________________________
+Pare de pagar o que não é seu.
+
+Morar do lado da Unesp, com piscina e academia, custando menos que um aluguel. 
+O Vitta Campus Ville 1 é para quem decidiu que 2026 é o ano da independência.
+
+50m² | 2 Dorms | Lazer completo.
+
+Investimento de R$ 160.000 (Aceita 100% financiamento).
+
+---------------------------------------------------------------------------------------
+Apartamento de 50m² no Vitta Campus Ville 1.
+
+Próximo à Unesp, com tudo o que você precisa:
+
+2 Dormitórios
+Lazer de clube (Piscina, Academia, Quadra)
+Segurança 24h
+
+Investimento: R$ 160 mil.
+Condomínio: R$ 240.
+
+Dê o próximo passo. (16) 99789-2901.
+
+-------------------------------------------------------------------------------------
+Apartamento 1º andar no Vitta Campus Ville 1 por apenas R$ 160.000. 
+Baixo custo de manutenção (Cond. R$ 240) e alta procura para locação.
+
+Wi-fi nas áreas comuns e estrutura completa.
+
+Solicite a simulação de financiamento.
+
+---------------------------------------------------------------------------------------
+O primeiro capítulo da sua nova história.
+
+Imagine um domingo de sol na piscina, churrasco com amigos no espaço gourmet e a segurança de uma portaria 24h. 
+Tudo isso no seu próprio apartamento.
+
+Vitta Campus Ville 1 – Conforto, lazer e a facilidade de financiar 100%. 
+
+Preço: R$ 160.000.
+
+O seu lugar em Araraquara está aqui. 
+
+---------------------------------------------------------------------------------------------
+Oportunidade não bate duas vezes.
+
+Um apartamento de 2 dormitórios, pronto para morar, por R$ 160 mil em Araraquara está se tornando raridade. 
+No Vitta Campus Ville 1, você tem horta, academia e piscina por um condomínio de apenas R$ 240.
+
+Vai esperar o preço subir ou vai garantir sua chave?
+
+-------------------------------------------------------------------------------------------------
+Vitta Campus Ville 1.
+
+Unidade 1º andar disponível para quem busca praticidade.
+
+Localização estratégica: Próximo à Unesp.
+
+R$ 160.000 | Aceita financiamento 100%.
+
+Lazer completo: Piscina, Academia e Portaria 24h.
+
+Menos burocracia, mais agilidade.
+
+--------------------------------------------------------------------------------------------
+Vitta Campus Ville 1 | R$ 160.000
+
+Apartamento 1º andar 
+2 dormitórios, do lado da UNESP.
+
+Financiamento: Até 100%
+
+Condomínio: R$ 240 (Lazer completo com piscina e academia).
+
+A oportunidade de sair do aluguel em Araraquara é agora.
+
+-----------------------------------------------------------------------------------------------
+Praticidade e Lazer.
+Apartamento 50m², 2 dorms, próximo à UNESP.
+
+Portaria 24h, piscina, academia e vaga de garagem.
+
+Valor: R$ 160 mil (Aceita financiamento).
+
+O imóvel certo, no lugar certo.
+
+--------------------------------------------------------------------------------------------------
+Vitta Campus Ville 1: 
+2 dormitórios + Lazer total por R$ 160.000.
+
+Próximo à UNESP. 
+Pronto para financiar 100%.
+
+Vai deixar passar ou vai agendar sua visita?
+                    </div>
+                    <a href="#" class="card-botao">Copiar Textos</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Textos para Corretores de Imóveis - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script>
+        // Função para copiar textos
+        document.querySelectorAll('.card-botao').forEach((botao, index) => {
+            botao.addEventListener('click', function(e) {
+                e.preventDefault();
+                const descricao = this.closest('.card-conteudo').querySelector('.card-descricao');
+                const texto = descricao.innerText;
+                
+                navigator.clipboard.writeText(texto).then(() => {
+                    const textoOriginal = this.textContent;
+                    this.textContent = 'Copiado! ✓';
+                    setTimeout(() => {
+                        this.textContent = textoOriginal;
+                    }, 2000);
+                }).catch(err => {
+                    alert('Erro ao copiar texto. Tente novamente.');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
