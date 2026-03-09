@@ -125,24 +125,40 @@
             background: #667eea;
         }
 
+        .card-botoes-container {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+            flex-wrap: wrap;
+        }
+
         .card-botao {
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-decoration: none;
-            padding: 12px 30px;
+            padding: 12px 20px;
             border-radius: 25px;
             font-weight: 600;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             border: none;
             cursor: pointer;
-            align-self: flex-start;
-            margin-top: auto;
+            flex: 1;
+            text-align: center;
+            min-width: 140px;
+        }
+
+        .card-botao.album {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
         }
 
         .card-botao:hover {
             transform: scale(1.05);
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .card-botao.album:hover {
+            box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4);
         }
 
         footer {
@@ -165,6 +181,14 @@
             .card-descricao {
                 max-height: 300px;
                 font-size: 13px;
+            }
+            
+            .card-botoes-container {
+                flex-direction: column;
+            }
+            
+            .card-botao {
+                width: 100%;
             }
         }
     </style>
@@ -414,7 +438,10 @@ Espaço: 115m² de área construída em um lote de 315m².
 
 Condição: R$ 430.000 (Estudamos sua proposta com carro).
                     </div>
-                    <a href="#" class="card-botao">Copiar Textos</a>
+                    <div class="card-botoes-container">
+                        <a href="#" class="card-botao">Copiar Textos</a>
+                        <a href="#" class="card-botao album" target="_blank">📸 Ver Álbum Completo</a>
+                    </div>
                 </div>
             </div>
 
@@ -518,7 +545,10 @@ Valor: R$ 550.000 (Estudamos permuta).
 
 Onde a cidade pulsa, sua nova casa espera.
                     </div>
-                    <a href="#" class="card-botao">Copiar Textos</a>
+                    <div class="card-botoes-container">
+                        <a href="#" class="card-botao">Copiar Textos</a>
+                        <a href="#" class="card-botao album" target="_blank">📸 Ver Álbum Completo</a>
+                    </div>
                 </div>
             </div>
 
@@ -634,7 +664,10 @@ Investimento: R$ 200.000.
 
 Simples. Direto. Seu.
                     </div>
-                    <a href="#" class="card-botao">Copiar Textos</a>
+                    <div class="card-botoes-container">
+                        <a href="#" class="card-botao">Copiar Textos</a>
+                        <a href="#" class="card-botao album" target="_blank">📸 Ver Álbum Completo</a>
+                    </div>
                 </div>
             </div>
 
@@ -762,7 +795,10 @@ Pronto para financiar 100%.
 
 Vai deixar passar ou vai agendar sua visita?
                     </div>
-                    <a href="#" class="card-botao">Copiar Textos</a>
+                    <div class="card-botoes-container">
+                        <a href="#" class="card-botao">Copiar Textos</a>
+                        <a href="#" class="card-botao album" target="_blank">📸 Ver Álbum Completo</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -774,7 +810,7 @@ Vai deixar passar ou vai agendar sua visita?
 
     <script>
         // Função para copiar textos
-        document.querySelectorAll('.card-botao').forEach((botao, index) => {
+        document.querySelectorAll('.card-botao:not(.album)').forEach((botao) => {
             botao.addEventListener('click', function(e) {
                 e.preventDefault();
                 const descricao = this.closest('.card-conteudo').querySelector('.card-descricao');
@@ -789,6 +825,23 @@ Vai deixar passar ou vai agendar sua visita?
                 }).catch(err => {
                     alert('Erro ao copiar texto. Tente novamente.');
                 });
+            });
+        });
+
+        // Função para os botões de álbum (você pode personalizar os links depois)
+        document.querySelectorAll('.card-botao.album').forEach((botao, index) => {
+            botao.addEventListener('click', function(e) {
+                e.preventDefault();
+                // Aqui você pode personalizar os links para cada imóvel
+                const links = [
+                    'https://photos.app.goo.gl/RdutHA6q7nAVhH1N8', // Link para Casa Morumbi
+                    'https://photos.app.goo.gl/Ty4QWN3L8P5ZuNtd7', // Link para Ap XV Novembro
+                    'https://photos.app.goo.gl/Jgof6KNoafhYSMwbA', // Link para Casa Jd Dom Pedro
+                    'https://photos.app.goo.gl/ygcLWZ5MzN2sCRha8'  // Link para Ap Campus ville
+                ];
+                
+                // Abre o link correspondente ao índice do botão
+                window.open(links[index], '_blank');
             });
         });
     </script>
